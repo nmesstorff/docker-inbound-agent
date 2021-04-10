@@ -22,7 +22,8 @@
 
 #TODO(oleg_nenashev): Does it also need an update?
 ARG version=latest-alpine-jdk11
-FROM jenkins/agent:$version
+#FROM jenkins/agent:$version
+FROM nmesstorff/docker-agent:latest
 
 ARG version
 LABEL Description="This is a base image, which allows connecting Jenkins agents via JNLP protocols" Vendor="Jenkins project" Version="$version"
